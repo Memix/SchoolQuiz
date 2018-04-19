@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SchoolQuiz</string>
+    <string name="question1">What is the Pythagorean theorem?</string>
+    <string name="option1"><html>a<sup>2</sup> - b<sup>2</sup> = c<sup>2</sup></html></string>
+    <string name="option2"><html>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></html></string>
+    <string name="option3"><html>a<sup>2</sup> * b<sup>2</sup> = c<sup>2</sup></html></string>
+    <string name="option4"><html>ab<sup>2</sup> = c<sup>2</sup></html></string>
+    <string name="question2">Which is the longest river in the world?</string>
+    <string name="radio5">Amazon</string>
+    <string name="radio6">Mississippi</string>
+    <string name="radio7">Nile</string>
+    <string name="radio8">Yellow river</string>
+    <string name="question3">Which of these show present tense(s)?</string>
+    <string name="check1">It was sunny, when I woke up today.</string>
+    <string name="check2">The sun is shining.</string>
+    <string name="check3">It is going to be sunny tomorrow.</string>
+    <string name="check4">The sun shines all year long.</string>
+    <string name="question4">What is the smallest constituent unit of ordinary matter that has the properties of a chemical element?</string>
+    <string name="button">Enter</string>
+</resources>
