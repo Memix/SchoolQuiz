@@ -92,7 +92,7 @@
             style="@style/check3"/>
 
         <CheckBox
-            android:id="@+id/box3"
+            android:id="@+id/box4"
             android:text="@string/check4"
             style="@style/check4"/>
 
@@ -101,6 +101,7 @@
             style="@style/question4" />
 
         <EditText
+            android:id="@+id/text"
             android:layout_width="300dp"
             android:layout_height="wrap_content" />
 
