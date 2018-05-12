@@ -14,6 +14,9 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int summon = 0;
+    int summon1;
+    int summon2;
+    int summon3;
     String answer = "atom";
     String answer1 = "Atom";
     String answer2 = "ATOM";
@@ -47,27 +50,23 @@ public class MainActivity extends AppCompatActivity {
                     summon = 0;
                 }
                 if (raido7.isChecked()) {
-                    summon = summon + 1;
+                    summon1 = 1;
                 }
                 else if (radio5.isChecked() || radio6.isChecked() || radio8.isChecked()) {
-                    summon = 0;
+                    summon1 = 0;
                 }
-                if (box2.isChecked() && box4.isChecked()) {
-                    summon = summon + 1;
-                }
-                else if (box1.isChecked() && box3.isChecked() || box1.isChecked() && box3.isChecked() && box2.isChecked() && box4.isChecked() ||
-                        box1.isChecked() && box2.isChecked() && box3.isChecked() || box1.isChecked() && box2.isChecked() && box4.isChecked() ||
-                        box2.isChecked() && box3.isChecked() && box4.isChecked() || box1.isChecked() || box2.isChecked() || box3.isChecked() || box4.isChecked())
-                {
-                    summon = 0;
+                if (!box1.isChecked() && box2.isChecked() && !box3.isChecked() && box4.isChecked()) {
+                    summon2 = 1;
                 }
                 if (text.getText().toString().equals(answer) || text.equals(answer1) || text.equals(answer2)) {
-                    summon = summon + 1;
+                    summon3 = 1;
                 }
+
+                int summon4 = summon + summon1 + summon2 + summon3;
 
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_SHORT;
-                Toast result = Toast.makeText(context, String.valueOf(summon), duration);
+                Toast result = Toast.makeText(context, String.valueOf(summon4), duration);
                 result.show();
             }
 
