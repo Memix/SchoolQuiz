@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_SHORT;
-                Toast result = Toast.makeText(context, String.valueOf(summon4), duration);
+                Toast result = Toast.makeText(context, String.valueOf("You have achieved" + summon4 + "out of 4 points!"), duration);
                 result.show();
             }
 
