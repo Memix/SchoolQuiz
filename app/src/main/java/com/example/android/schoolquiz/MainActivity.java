@@ -61,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
                 if (text.getText().toString().equals(answer) || text.equals(answer1) || text.equals(answer2)) {
                     summon3 = 1;
                 }
+                else {
+                    Context context = getApplicationContext();
+                    int duration = Toast.LENGTH_SHORT;
+                    Toast check = Toast.makeText(context, String.valueOf("This is not the right answer."), duration);
+                    check.show();
+                }
 
                 int summon4 = summon + summon1 + summon2 + summon3;
 
